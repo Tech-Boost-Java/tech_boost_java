@@ -10,5 +10,18 @@ public class Myfirstprogram {
         int age = sc.nextInt();
 
         System.out.println("You are " + age + " years old" + "\nYour name is "+ name);
+
+        int[] marks = new int [9];
+        for (int i = 0; i < marks.length; i++) {
+            System.out.println("Enter mark:");
+            marks[i] = sc.nextInt();
+            if(marks[i] < 0) {
+                System.out.println("Mark out of range");
+                break;
+            }
+        }
+        for (int i = 0; i < marks.length; i++) {
+            System.out.println(marks[i]);
+        }
     }
 }
