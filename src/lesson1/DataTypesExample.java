@@ -2,7 +2,7 @@ package lesson1;
 
 public class DataTypesExample {
     private static int age;
-    private String name = "John";
+    private String userName = "John";
 
     public static void main(String[] args) {
         // Integer types (whole numbers)
