@@ -2,32 +2,27 @@ package homeworks;
 
 import homeworks.Person;
 
+import java.util.Scanner;
+
 public class oopHw3 {
+    static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
-        Person p1 = new Person("Maks", "Nazarenko");
-        p1.input(2006);
+        Person[] persons = new Person[5];
 
-        Person p2 = new Person("Ivan", "Ivanov");
-        p2.changeName("Vitalik", null);
-        p2.input(2005);
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Input data for Person " + i + ": ");
+            persons[i] = new Person();
+            persons[i].input(sc);
+        }
 
-        Person p3 = new Person("Artem", "Artemovich");
-        p3.changeName(null, "NeArtemovich");
-        p3.input(2004);
+        for (Person p : persons) {
+            System.out.println(p.output());
+        }
 
-        Person p4 = new Person("Vanya", "Vanya");
-        p4.changeName("Sergey", "Sergey");
-        p4.input(2003);
-
-        Person p5 = new Person();
-        p5.changeName("John", "Winchester");
-        p5.input(1966);
+        System.out.println("\nData of Person 2 was changed");
+        persons[2].changeName("Changed", "");
+        System.out.println(persons[2].output());
 
 
-        System.out.println(p1.output());
-        System.out.println(p2.output());
-        System.out.println(p3.output());
-        System.out.println(p4.output());
-        System.out.println(p5.output());
     }
 }
