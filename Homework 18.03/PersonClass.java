@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class PersonClass {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
-            int count = 2;
+            int count = 5;
             Person[] people = new Person[count];
 
             for (int i = 0; i < count; i++) {
