@@ -2,7 +2,7 @@ package hw;
 
 public class DigitsSum {
     public static void main(String[] args) {
-        System.out.println(calculateDigitSum(123));
+        System.out.println(calculateDigitSum(123)); //6
     }
     public static int calculateDigitSum(int number) {
         int sum = 0;
