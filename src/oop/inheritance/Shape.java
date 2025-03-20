@@ -6,7 +6,6 @@ public class Shape {
     public Shape(String name) {
         this.name = name;
     }
-
     public double calculateArea() {
         return 0;
     }

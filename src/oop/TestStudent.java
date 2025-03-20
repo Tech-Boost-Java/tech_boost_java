@@ -9,7 +9,7 @@ public class TestStudent {
 
         student1.setFirstName("Ivan");
         student1.setLastName("Green");
-        student1.setAge(25);
+        student1.setAge(32);
         student1.printFullName();
         System.out.println(student1.passExam("Math"));
     }
