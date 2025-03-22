@@ -24,5 +24,6 @@ public static void main(String[] args) {
     double number = sc.nextDouble();
     double sum = calculateCube(number);
     System.out.println(sum);
+    sc.close();
 }
 }

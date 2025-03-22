@@ -21,5 +21,6 @@ public class Main {
         person2.changeName("Ben", "Brendon");
         person2.output();
 
+        sc.close();
     }
 }

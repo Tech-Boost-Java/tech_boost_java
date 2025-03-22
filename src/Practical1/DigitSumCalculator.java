@@ -22,5 +22,6 @@ public class DigitSumCalculator {
         int number = sc.nextInt();
         int sum = calculateDigitSum(number);
         System.out.println(sum);
+        sc.close();
     }
 }
