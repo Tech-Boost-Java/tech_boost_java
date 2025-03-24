@@ -31,6 +31,6 @@ public class PracticalTask2 {
 
         int sum = Employee.getTotal();
 
-        System.out.println("Total salary: " + sum);
+        System.out.println(" Total salary: " + sum);
     }
 }
