@@ -1,15 +1,16 @@
-package lesson1;
+package intro;
 
 public class OperatorsExample {
     public static void main(String[] args) {
         // Arithmetic Operators
         int a = 10;
-        int b = 5;
+        int b = 3;
 
         int sum = a + b;        // Addition
         int difference = a - b; // Subtraction
         int product = a * b;    // Multiplication
-        int quotient = a / b;   // Division
+        double quotient = (double)a / b;   // Division
+        int div = a / b;
         int remainder = a % b;  // Modulus (remainder after division)
 
         // Output arithmetic results
@@ -34,11 +35,11 @@ public class OperatorsExample {
         System.out.println("a >= b: " + isGreaterOrEqual);    // true
 
         // Logical Operators
-        boolean x = true;
-        boolean y = false;
+        boolean x = true; //1
+        boolean y = false;//0
 
-        boolean andResult = x && y;  // Logical AND (true if both are true)
-        boolean orResult = x || y;   // Logical OR (true if at least one is true)
+        boolean andResult = x && y;  // Logical AND (true if both are true) -> "*"
+        boolean orResult = x || y;   // Logical OR (true if at least one is true) -> "+"
         boolean notResult = !x;      // Logical NOT (inverts the value)
 
         // Output logical results
@@ -48,11 +49,15 @@ public class OperatorsExample {
 
         // Assignment and Increment/Decrement Operators
         int num = 10;
-        num += 5;   // Same as num = num + 5
-        num++;      // Increment by 1
-        num--;      // Decrement by 1
+        num -= 5;   // Same as num = num + 5
+//        num++;      // Increment by 1
+//        num--;      // Decrement by 1
 
         // Output modified value
         System.out.println("Modified num: " + num);   // 15
+        System.out.println(++num);
+        System.out.println(num--);
+
+        System.out.println(num++ + ++num + ++num + num++);
     }
 }

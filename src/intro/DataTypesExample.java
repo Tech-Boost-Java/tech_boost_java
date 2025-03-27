@@ -1,4 +1,4 @@
-package lesson1;
+package intro;
 
 public class DataTypesExample {
     private static int age;
