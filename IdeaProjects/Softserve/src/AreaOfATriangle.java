@@ -8,7 +8,7 @@ public class AreaOfATriangle {
         boolean flag = false;
         while (!this.isTriangleValid()) {
             if (flag) {
-                System.out.println("Please enter the right triangle sides!.");
+                System.out.println("Please enter the right triangle sides!");
             }
             for (int i = 0; i < 3; i++) {
                 boolean isChecked = false;
