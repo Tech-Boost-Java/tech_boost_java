@@ -1,4 +1,4 @@
-package homework.hw2;
+package homework.hw3;
 
 import java.util.Collections;
 import java.util.HashSet;
