@@ -1,6 +1,4 @@
-package homeworks;
-
-import homeworks.Person;
+package homeworks.OOP_HW;
 
 import java.util.Scanner;
 
