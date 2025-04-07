@@ -1,4 +1,4 @@
-package homework.hw1;
+package homework.hw1_WorkingWithClandInt;
 
 import java.util.Calendar;
 import java.util.Scanner;

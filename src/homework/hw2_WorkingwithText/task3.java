@@ -1,4 +1,4 @@
-package homework.hw2;
+package homework.hw2_WorkingwithText;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;
