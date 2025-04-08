@@ -1,7 +1,5 @@
 package str;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class StringFormatDemo {
     public static void main(String[] args) {

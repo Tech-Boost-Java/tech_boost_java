@@ -5,6 +5,8 @@ import java.util.Random;
 
 public class ArrayDemo {
     public static void main(String[] args) {
+
+
         //Way 1
         int[] elements = new int[5];
 
@@ -63,6 +65,7 @@ public class ArrayDemo {
         int[] nums = new int[10];
         Arrays.fill(nums, new Random().nextInt(100));
         System.out.println(Arrays.toString(nums));
+
 
     }
 }
