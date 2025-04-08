@@ -21,15 +21,11 @@ public class HomePerson {
         private String firstName;
         private String lastName;
         private int birthYear;
-
-        // default constructor
         public Person() {
             this.firstName = "";
             this.lastName = "";
             this.birthYear = 0;
         }
-
-        // constructor with 2 parameters
         public Person(String firstName, String lastName) {
             this.firstName = firstName;
             this.lastName = lastName;
@@ -39,32 +35,25 @@ public class HomePerson {
         public String getFirstName() {
             return firstName;
         }
-
         public void setFirstName(String firstName) {
             this.firstName = firstName;
         }
-
         public String getLastName() {
             return lastName;
         }
-
         public void setLastName(String lastName) {
             this.lastName = lastName;
         }
-
         public int getBirthYear() {
             return birthYear;
         }
-
         public void setBirthYear(int birthYear) {
             this.birthYear = birthYear;
         }
-
         public int getAge() {
-            int currentYear = java.time.Year.now().getValue();
+            int currentYear = 2025;
             return currentYear - birthYear;
         }
-
         public void input(Scanner scanner) {
             System.out.print("Enter first name: ");
             this.firstName = scanner.nextLine();
@@ -74,15 +63,13 @@ public class HomePerson {
 
             System.out.print("Enter birth year: ");
             this.birthYear = scanner.nextInt();
-            scanner.nextLine(); // consume newline
+            scanner.nextLine();
         }
-
         public void output() {
             System.out.println("Name: " + firstName + " " + lastName);
             System.out.println("Year of Birth: " + birthYear);
             System.out.println("Age: " + getAge());
         }
-
         public void changeName(String fn, String ln) {
             if (fn != null && !fn.isEmpty()) {
                 this.firstName = fn;
@@ -92,29 +79,24 @@ public class HomePerson {
             }
         }
     }
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Person[] people = new Person[5];
-
         for (int i = 0; i < people.length; i++) {
             System.out.println("\n--- Person #" + (i + 1) + " ---");
             people[i] = new Person();
             people[i].input(scanner);
         }
-
         System.out.println("\n--- Outputting Person Information ---");
         for (int i = 0; i < people.length; i++) {
             System.out.println("Person #" + (i + 1) + ":");
             people[i].output();
             System.out.println();
         }
-
         System.out.println("Changing name of the first person for demonstration...");
         people[0].changeName("John", "Smith");
         System.out.println("New name for the first person:");
         people[0].output();
-
         scanner.close();
     }
 }
