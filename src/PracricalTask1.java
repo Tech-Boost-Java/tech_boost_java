@@ -16,7 +16,7 @@ public class PracricalTask1 {
 
     public static void main(String[] args) {
         int firstNumb = getNumber("Enter the first number: ");
-        int secondNumb = getNumber("Enter the second number: ");
+        int secondNumb = getNumber("Enter the second number1: ");
 
         int sum = getTotal(firstNumb, secondNumb);
         System.out.println("The sum of " + firstNumb + " and " + secondNumb + " is " + sum);
