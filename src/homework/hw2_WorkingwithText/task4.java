@@ -1,5 +1,3 @@
-package homework.hw2_WorkingwithText;
-
 import java.util.Scanner;
 import java.util.Random;
 
