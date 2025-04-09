@@ -1,3 +1,4 @@
+package Practical4;
 // Customer class
 class Customer {
     // Attributes
