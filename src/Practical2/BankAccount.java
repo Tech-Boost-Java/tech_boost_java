@@ -8,28 +8,36 @@ public class BankAccount {
         this.accountNumber = accountNumber;
         this.balance = balance;
     }
-    public void setAccountNumber(String accountNumber) {
+
+    void setAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
     }
 
-    public void setBalance(double balance) {
+    void setBalance(double balance) {
         this.balance = balance;
     }
 
-    public String getAccountNumber() {
+    String getAccountNumber() {
         return accountNumber;
     }
 
-    public double getBalance() {
+    double getBalance() {
         return balance;
     }
 
+    // Add deposit method
     public void deposit(double amount) {
-        this.balance += amount;
+        if (amount > 0) {
+            this.balance += amount;
+        }
     }
 
-    public void withdraw(double amount) {
-        if (amount <= this.balance)
+    // Add withdraw method
+    public boolean withdraw(double amount) {
+        if (amount > 0 && this.balance >= amount) {
             this.balance -= amount;
+            return true;
+        }
+        return false;
     }
 }
