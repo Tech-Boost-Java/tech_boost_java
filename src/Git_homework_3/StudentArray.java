@@ -1,9 +1,6 @@
 package Git_homework_3;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 class Student {
     private String name;
@@ -50,7 +47,7 @@ public class StudentArray {
     private static final int MAX_COURSE = 7;
 
     public static void averageGrades(List<Student> students) {
-        List<Student>  sortedStudents = new ArrayList<Student>();
+        List<Student>  sortedStudents = new ArrayList<>();
         for (Student student : students) {
             int[] grades = student.getGrades();
             double sum = 0.0;
@@ -88,9 +85,8 @@ public class StudentArray {
 
     public static void main(String[] args) {
         List<Student> students = new LinkedList<>();
-        List<String> studentNames = new LinkedList<>();
-        studentNames.add("Egor"); studentNames.add("Grisha"); studentNames.add("Max"); studentNames.add("Andrii"); studentNames.add("Mikola"); studentNames.add("Oleksandr");
         String[] groupNames = new String[]{"K-16", "K-17", "K-15", "K-14", "K-13", "K-12"};
+        List<String> studentNames = new LinkedList<>(Arrays.asList("Egor", "Grisha", "Max", "Andrii", "Mikola", "Oleksandr"));
         Random rand = new Random();
         final int MAX_GRADE = 12;
         final int MAX_COURSE = 7;
