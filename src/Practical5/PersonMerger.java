@@ -38,7 +38,6 @@ class Person {
 
 class PersonMerger {
 
-    // TODO: Implement method to merge and sort persons by age
     public static List<Person> mergeAndSortPersons(List<Person> list1, List<Person> list2) {
         // Handle null lists by treating them as empty
         List<Person> firstList = list1 != null ? list1 : Collections.emptyList();
@@ -56,7 +55,6 @@ class PersonMerger {
         return result;
     }
 
-    // TODO: Implement method to filter persons by a minimum age
     public static List<Person> filterByMinimumAge(List<Person> persons, int minAge) {
         List<Person> result = new ArrayList<>();
         for (Person person : persons) {
@@ -67,7 +65,6 @@ class PersonMerger {
         return result;
     }
 
-    // TODO: Implement method to calculate the average age of persons
     public static double calculateAverageAge(List<Person> persons) {
         double sum = 0;
         for (Person person : persons) {
