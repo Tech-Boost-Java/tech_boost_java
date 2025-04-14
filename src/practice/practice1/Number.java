@@ -1,7 +1,7 @@
 package practice.practice1;
 import java.util.Scanner;
 
-public class Main {
+public class Number {
     public double getTotal(double a, double b) {
         return a + b;
     }
@@ -19,7 +19,7 @@ public class Main {
     public static void main(String[] args) {
         double a = getNumber("Enter a");
         double b = getNumber("Enter b");
-        Main main = new Main();
+        Number main = new Number();
         System.out.println(main.getTotal(a, b));
         System.out.println(main.getAverage(a, b));
     }
