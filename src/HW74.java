@@ -11,9 +11,12 @@ public class HW74 {
     }
     public static void main(String[] args) {
         String[] surnames = {"Smith", "Johnson", "Brown", "Taylor", "Anderson", "Thomas", "Jackson", "White", "Harris", "Martin"};
-        String[] names = {"John", "Emily", "Michael", "Sophia", "David", "Olivia", "Daniel", "Emma", "James", "Ava"};
+        String[] names = {"James", "Emily", "Michael", "Sophia", "David", "Olivia", "Daniel", "Emma", "James", "Ava"};
 
         Map<String, String> personMap = personMap(surnames, names);
+        System.out.println(personMap);
+
+        personMap.remove("Smith");
         System.out.println(personMap);
     }
 }
