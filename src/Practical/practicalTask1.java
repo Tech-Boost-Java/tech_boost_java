@@ -1,4 +1,4 @@
-package QuizeTasks;
+package Practical;
 
 public class practicalTask1 {
     static abstract class Device {

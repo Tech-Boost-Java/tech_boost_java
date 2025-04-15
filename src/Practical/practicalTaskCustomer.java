@@ -1,4 +1,4 @@
-package QuizeTasks;
+package Practical;
 
 class Customer{
     protected String name,email;

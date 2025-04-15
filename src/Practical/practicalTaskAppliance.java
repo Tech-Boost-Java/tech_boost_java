@@ -1,4 +1,4 @@
-package QuizeTasks;
+package Practical;
 
 public class practicalTaskAppliance {
 
