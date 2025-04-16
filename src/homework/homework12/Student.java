@@ -52,7 +52,6 @@ class Student {
 
 class Main {
     public static void main(String[] args) {
-        // Create a List of Student objects
         List<Student> students = new ArrayList<>();
         students.add(new Student("Alice", 2));
         students.add(new Student("Bob", 1));
@@ -60,17 +59,16 @@ class Main {
         students.add(new Student("David", 1));
         students.add(new Student("Eve", 2));
 
-        // Display all students
         for (Student student : students) {
             System.out.println(student);
         }
 
-        Collections.sort(students, Student.compareByName());
+        students.sort(Student.compareByName());
         for (Student student : students) {
             System.out.println(student);
         }
 
-        Collections.sort(students, Student.compareByCourse());
+        students.sort(Student.compareByCourse());
         for (Student student : students) {
             System.out.println(student);
         }
